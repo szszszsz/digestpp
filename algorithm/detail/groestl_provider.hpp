@@ -121,7 +121,7 @@ public:
 		pos = 0;
 		total = 0;
 		memset(&h[0], 0, sizeof(uint64_t)*16);
-		h[hs > 256 ? 15 : 7] = byteswap(hash_size());
+		// h[hs > 256 ? 15 : 7] = byteswap(hash_size());
 	}
 
 	inline void update(const unsigned char* data, size_t len)
